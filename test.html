@@ -1,0 +1,163 @@
+<!doctype HTML>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>Mobile Listview</title>
+  <link rel="stylesheet" type="text/css" href="css/index1.css"/>
+  <script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100" rel="stylesheet">
+<!--[if lt IE 9]>
+  <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+<![endif]-->
+</head>
+<body>
+ <div class="content">
+	<div class="heading">
+      <div class="row">
+            <div class="col col-xs-1"></div>
+            <div class="col col-xs-10 title"><b>foodout.lt</b></div>
+            <div class="col col-xs-1 close"><span class="glyphicon glyphicon-remove"></span></div>
+      </div>
+  </div>
+
+  <div class=" mainContent">
+      <ul class="list">
+        <li>
+          <div class="list-item">
+            <div class="row">
+              <div class="col col-xs-3 image">
+            	     <img src="http://sushicity.lt/wp-content/uploads/2015/03/SushiCityLogo.png"/>
+              </div>
+              <div class="col col-xs-4">
+                  <ul class="options">
+                      <li class="restaurantName">Sushi city
+                          <button type="button" class="btn btn-success">N</button>
+                      </li>
+                      <li class="cuisine">Japonų</li>
+                      <li class="time">Atsiėmimas: 20min</li>
+                      <li class="minimumBasket">Min. krepšelis: 10 eur</li>
+                  </ul>
+              </div>
+              <div class="col col-xs-2 delivery"><span>Pristatymas: 60min</span></div>
+              <div class="col col-xs-3 viewMenu"><button type="button" class="btn btn-success">Žiūrėti meniu</button></div>
+            </div>
+          </div>
+        </li>
+
+        <li>
+          <div class="list-item">
+            <div class="row">
+              <div class="col col-xs-3 image">
+                  <img src="http://www.pomodoro.lt/themes/default/assets/images/logo.png"/>
+              </div>
+              <div class="col col-xs-4">
+                  <ul class="options">
+                      <li class="restaurantName">Pomodoro
+                          <button type="button" class="btn btn-success">N</button>
+                      </li>
+                      <li class="cuisine">Itališka, Europos</li>
+                      <li class="time">Atsiėmimas: 45min</li>
+                      <li class="minimumBasket">Min. krepšelis: 15 eur</li>
+                  </ul>
+              </div>
+              <div class="col col-xs-2 delivery"><span>Pristatymas: 45min</span></div>
+              <div class="col col-xs-3 viewMenu"><button type="button" class="btn btn-success">Žiūrėti meniu</button></div>
+            </div>
+          </div>
+        </li>
+
+        <li>
+          <div class="list-item">
+            <div class="row">
+              <div class="col col-xs-3 image">
+                   <img src="http://sushicity.lt/wp-content/uploads/2015/03/SushiCityLogo.png"/>
+              </div>
+              <div class="col col-xs-4">
+                  <ul class="options">
+                      <li class="restaurantName">Sushi city
+                          <button type="button" class="btn btn-success">N</button>
+                      </li>
+                      <li class="cuisine">Japonų</li>
+                      <li class="time">Atsiėmimas: 20min</li>
+                      <li class="minimumBasket">Min. krepšelis: 10 eur</li>
+                  </ul>
+              </div>
+              <div class="col col-xs-2 delivery"><span>Pristatymas: 60min</span></div>
+              <div class="col col-xs-3 viewMenu"><button type="button" class="btn btn-success">Žiūrėti meniu</button></div>
+            </div>
+          </div>
+        </li>
+
+        <li>
+          <div class="list-item">
+            <div class="row">
+              <div class="col col-xs-3 image">
+                   <img src="http://sushicity.lt/wp-content/uploads/2015/03/SushiCityLogo.png"/>
+              </div>
+              <div class="col col-xs-4">
+                  <ul class="options">
+                      <li class="restaurantName">Sushi city
+                          <button type="button" class="btn btn-success">N</button>
+                      </li>
+                      <li class="cuisine">Japonų</li>
+                      <li class="time">Atsiėmimas: 20min</li>
+                      <li class="minimumBasket">Min. krepšelis: 10 eur</li>
+                  </ul>
+              </div>
+              <div class="col col-xs-2 delivery"><span>Pristatymas: 60min</span></div>
+              <div class="col col-xs-3 viewMenu"><button type="button" class="btn btn-success">Žiūrėti meniu</button></div>
+            </div>
+          </div>
+        </li>
+
+        <li>
+          <div class="list-item">
+            <div class="row">
+              <div class="col col-xs-3 image">
+                  <img src="http://www.pomodoro.lt/themes/default/assets/images/logo.png"/>
+              </div>
+              <div class="col col-xs-4">
+                  <ul class="options">
+                      <li class="restaurantName">Pomodoro
+                          <button type="button" class="btn btn-success">N</button>
+                      </li>
+                      <li class="cuisine">Itališka, Europos</li>
+                      <li class="time">Atsiėmimas: 45min</li>
+                      <li class="minimumBasket">Min. krepšelis: 15 eur</li>
+                  </ul>
+              </div>
+              <div class="col col-xs-2 delivery"><span>Pristatymas: 45min</span></div>
+              <div class="col col-xs-3 viewMenu"><button type="button" class="btn btn-success">Žiūrėti meniu</button></div>
+            </div>
+          </div>
+        </li>
+
+        <li>
+          <div class="list-item">
+            <div class="row">
+              <div class="col col-xs-3 image">
+                  <img src="http://www.pomodoro.lt/themes/default/assets/images/logo.png"/>
+              </div>
+              <div class="col col-xs-4">
+                  <ul class="options">
+                      <li class="restaurantName">Pomodoro
+                          <button type="button" class="btn btn-success">N</button>
+                      </li>
+                      <li class="cuisine">Itališka, Europos</li>
+                      <li class="time">Atsiėmimas: 45min</li>
+                      <li class="minimumBasket">Min. krepšelis: 15 eur</li>
+                  </ul>
+              </div>
+              <div class="col col-xs-2 delivery"><span>Pristatymas: 45min</span></div>
+              <div class="col col-xs-3 viewMenu"><button type="button" class="btn btn-success">Žiūrėti meniu</button></div>
+            </div>
+          </div>
+        </li>
+   
+      </ul>
+  </div>
+ </div>
+</body>
+</html>
