@@ -13,10 +13,110 @@
 <![endif]-->
 </head>
 <body>
+
+ <div class="content">
+    <div class="heading">
+      <div class="row">
+            <div class="col col-xs-1"></div>
+            <div class="col col-xs-10 title"><b>restaurant name</b></div>
+            <div class="col col-xs-1 close"><span class="glyphicon glyphicon-remove"></span></div>
+      </div>
+  </div>
  
   <div class=" mainContent">
       
+         <div class="panel panel-default">
+            <div class="panel-body">
+                
+                <div class="col col-xs-6 meal-description" style="text-align: center">
+                    <img src="https://files.taxfoundation.org/20170110161620/meal2.jpg"/>
+                        <h3><b>Meal name</b></h3>
+                        <div class="ingredients">Ingredients</div>
+                </div>
+                
+                <div class="col col-xs-6">
 
- </div>
+                    <div class="row meal-item-options">
+                        <h4>Pasirinkite dydį</h4>
+                        <ul>
+
+                            <li>
+                                <input id="size1" class="radio-custom" name="radio-group size" type="radio">
+                                <label for="size1" class="radio-custom-label">6 vnt <br>
+                                <span class="price"><b>€ 2,5</b></span></label>
+                            </li>
+                            <li>
+                                <input id="size2" class="radio-custom" name="radio-group size" type="radio">
+                                <label for="size2" class="radio-custom-label">8 vnt <br>
+                                <span class="price"><b>€ 3</b></span></label>
+                            </li>
+                            <li>
+                                <input id="size3" class="radio-custom" name="radio-group size" type="radio">
+                                <label for="size3" class="radio-custom-label">10 vnt <br>
+                                <span class="price"><b>€ 5</b></span></label>
+                            </li>
+
+                        </ul>                        
+                    </div>
+
+                    <div class="row meal-item-options">
+                        <h4>Pasirinkite papildomų priedų</h4>
+                        <ul>
+                            <li>
+                                <input id="radio-1" class="radio-custom" name="radio-group optional1" type="radio" checked>
+                                <label for="radio-1" class="radio-custom-label">mokestis už indelį <br>
+                                <span class="price"><b>+ € 0,5</b></span></label>
+                            </li>
+                        </ul>   
+                    </div>
+
+                     <div class="row meal-item-options">
+                        <h4>Kiekis</h4>                       
+                        <span class="inc button"></span>
+                        <input type="text" value="1">
+                        <span class="dec button"></span>
+                    </div>
+                </div>           
+     
+                <div class="col col-xs-12 footer">
+                    <a href="meallist.html" style="text-decoration:none">
+                        <h3><b>PRIDĖTI Į KREPŠELĮ</b></h3>
+                   </a>
+                </div>             
+                           
+        </div>
+    </div>
+
 </body>
 </html>
+
+
+<script>
+
+$(function() {
+
+  $(".inc").append('+');
+   $(".dec").append('-');
+
+  $(".button").on("click", function() {
+
+    var $button = $(this);
+    var oldValue = $button.parent().find("input").val();
+
+    if ($button.text() == "+") {
+      var newVal = parseFloat(oldValue) + 1;
+    } else {
+       // Don't allow decrementing below zero
+      if (oldValue > 1) {
+        var newVal = parseFloat(oldValue) - 1;
+        } else {
+        newVal = 1;
+      }
+      }
+
+    $button.parent().find("input").val(newVal);
+
+  });
+
+});
+</script>
