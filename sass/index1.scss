@@ -1,6 +1,6 @@
 body{
   margin: 0;
-  background-color: #f2f2f2;
+  background-color: #F2F2F2;
   color: #19181C;
   padding: 0;
 }
@@ -12,7 +12,7 @@ body{
   padding: 0;
   }
 
-$main-color: #d2143a;
+$main-color: #D2143A;
 
 .row{
   padding: 1% 2% 1% 2%;
@@ -50,47 +50,88 @@ list{
 }
 
 
-li:hover {
-  background: #eee;
-  cursor: pointer;
-}
+.list-item:hover {
+    background: #EEEEEE;
+    cursor: pointer;
+  }
 
-.image {
+  .image {
     img {
       height: 100%;
       width: 100%;
     }
-}
+  }
 
-.restaurantName{
-   font-size: 20px;
-   color: black;
-   padding-bottom: 2%;
-       button{
-       margin: 2%;
-       }
-}
+  .restaurantName{
+    font-size: 20px;
+    color: black;
+    padding-bottom: 2%;
+    button{
+      margin: 2%;
+    }
+  }
 
-.delivery{
-  padding-top: 5%;
-}
+  .delivery{
+    padding-top: 5%;
+  }
 
-.viewMenu{
-  padding-top: 4%;
-  text-align: right;
-      button{
+  $button-color: #88CC00;
+
+  .viewMenu{
+    padding-top: 4%;
+    text-align: right;
+    button{
       width: 80%;
-      background-color: #88cc00;
-      }
+      background-color: $button-color;
+    }
+  }
+
+  .options{
+    li{
+      margin-bottom: 1%;
+    }
+  }
+
+  .panel-body {
+    img {
+      width: 100%;
+    }
+  }
+
+  .panel-body:hover{
+    background: #EEEEEE;
+    cursor: pointer;
+  }
+
+li{
+  h1{
+    margin-left: 2%;
+  }
 }
 
-.options{
-    li{
-    margin-bottom: 1%;
+.ingredients{
+  color: #c15e5e;
+}
+
+.panel-footer{
+  padding: 5px 15px;
+    button{
+      background-color: $button-color;
+      float: right;
+      margin-top: -10px;
+       }
+    b{
+      float: left;
     }
 }
 
-
+.panel-footer:before, .panel-footer:after {
+    display: table;
+    content: " ";
+}
+.panel-footer:after {
+    clear: both;
+}
 
 
 

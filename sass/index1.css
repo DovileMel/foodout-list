@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
   color: #19181C;
   padding: 0; }
 
@@ -16,7 +16,7 @@ body {
 
 .heading {
   text-align: center;
-  background-color: #D2143A; }
+  background-color: #d2143a; }
 
 .title {
   font-size: 25px;
@@ -32,13 +32,11 @@ ul {
   border: 1px solid silver;
   padding: 3%; }
 
-  /*test page*/
-
 list li {
   border: 1px solid silver; }
 
-.list-item:hover {
-  background: #EEEEEE;
+list li:hover {
+  background: #eee;
   cursor: pointer; }
 
 .image img {
@@ -60,44 +58,19 @@ list li {
   text-align: right; }
   .viewMenu button {
     width: 80%;
-    background-color: #88CC00; }
+    background-color: #88cc00; }
 
 .options li {
   margin-bottom: 1%; }
-
-
-  /*meallist page*/
 
 .panel-body img {
   width: 100%; }
 
 .panel-body:hover {
-  background: #EEEEEE;
+  background: #eee;
   cursor: pointer; }
 
-li h1 {
+h1 {
   margin-left: 2%; }
-
-.ingredients {
-  color: #c15e5e; }
-
-.panel-footer {
-  padding: 5px 15px; }
-  .panel-footer button {
-    background-color: #88CC00;
-    float: right;
-    margin-top: -10px; }
-  .panel-footer b {
-    float: left; }
-
-.panel-footer:before, .panel-footer:after {
-  display: table;
-  content: " "; }
-
-.panel-footer:after {
-  clear: both; }
-
-
- /* mealitem page*/
 
 /*# sourceMappingURL=index1.css.map */
